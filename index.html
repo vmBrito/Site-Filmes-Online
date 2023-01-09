@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Xopper Filmes</title>
+        <link rel="stylesheet" href="./assets/css/reset.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <!--O reset CSS reseta tudo para ficar mais facil personalizar e 
+        estilizar(lembre-se de colocar ele antes do principal)-->
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+        <!--estrutura do nosso projeto(estrutura base dele) -->
+    <body>
+        <!--CABEÇALHO-->
+        <header>
+            <div class="conteiner">
+                <!--o figure serve para representar que é uma figura e separar seu espaço-->
+                <figure>
+                <img src="./assets/img/logo.png" alt="vitin filmes">
+
+                <figcaption>Xopper Filmes</figcaption> <!--quando usamos figure depois temos que usar figcaption para aparecer aquele textinho na imagem pra falar do local da imagem-->
+                </figure>
+                <!--A TAG NAV SIGNIFICA QUE VAI TER ALGUM TIPO DE NAVEGÇÃO E NO NOSSO CASO DE AGORA É A NAVEGAÇÃO POR LINK-->
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="">Filmes</a>
+                        </li>
+                        <li>
+                            <a href="">Sobre nós</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!--CONTEUDO PRINCIPAL-->
+        <main class="conteiner">
+            <section>
+                <P>XoppeR FILMES - FILMES ONLINE - FILMES ONLINE GRATUITOS</P>
+                <!--nao usou nav pq nao vai navegar entre links(nao vai mudar a pagina)-->
+                <ul class="categorias">
+                    <li>
+                        <a href="">Mostrar todos</a>
+                    </li>
+                    <li>
+                        <a href="">Comédia</a>
+                    </li>
+                    <li>
+                        <a href="">Ação</a>
+                    </li>
+                    <li>
+                        <a href="">Drama</a>
+                    </li>
+                    <li>
+                        <a href="">Romance</a>
+                    </li>
+                    <li>
+                        <a href="">Terror</a>
+                    </li>
+                </ul>
+
+                <div id="buscar">
+                    <input type="text" id="Busca" placeholder="Buscar filmes">
+                    <button>Pesquisar</button>
+                </div>
+
+                <ul class="filmes">
+                </ul>
+            </section>
+        </main>
+        <script src="./assets/js/filmes.js"></script>
+        <script src="./assets/js/script.js"></script>
+    </body>
+</html>

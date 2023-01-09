@@ -1,0 +1,153 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 120px;
+    background-color: #1c1c1c;
+}
+.conteiner{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    /*para poder alinhar no meio(outra forma de fazer isso) e os de cima
+    servem para definir uma largura maxima das fotos dentro de um cubo
+    dentro de um bloco onde mudamos tudo dentro dele*/
+}
+header{
+    background-color: #e6e6e6;
+    width: 100%;
+    display: flex;
+    padding: 13px;
+    position: fixed;
+    /*fixamos o header no topo*/
+    top: 0;
+}
+header .conteiner{
+    display: flex;
+}
+header figure{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+header figure img{
+    width: 70px;
+    padding-right: 20px;
+}
+header figure figcaption{
+    text-transform: uppercase;
+    font-weight: bold; /*serve para colocar em negrito e é o peso da fonte*/
+    /*para importar uma font precisa usar o google fonts*/
+    font-size: 22px;
+}
+header nav{
+    width: 300px;
+}
+header nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+header nav ul li{
+}
+header nav ul li a{
+    color: #1c1c1c;
+    font-size: 20px;
+    font-weight: 300px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/*sempre é bom colocar todas as regras e elementos no css mesmo que nao use
+já que é bom para se organizar e depois é so limpar os q nao usou*/
+
+section p{
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 5px;
+    /* o letter spacing seve para espaçar os espaços entre as letras*/
+}
+
+section ul.categorias{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 50px 0 50px;
+}
+
+section ul.categorias li{
+
+}
+section ul.categorias li a{
+    color: #fff;
+    background-color: #2f2f2f;
+    display: block;
+    width: 130px;
+    text-align: center;
+    border-radius: 50px;
+    padding: 10px;   
+}
+
+section ul.filmes{
+    width: 100%;
+    display: flex;
+    align-items: center;
+   justify-content: space-between;
+   flex-wrap: wrap;
+
+   /*o flax wrap serve para quando um elemento encostar na borda do site ele
+   possa ser quebrado, fazendo assim os outros elementos irem para a parte
+   de baixo da pagina*/
+
+}
+section ul.filmes li{
+    max-width: 185px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+section ul.filmes li figure{
+}
+section ul.filmes li figure img{
+    width: 100%;
+}
+section ul.filmes li h2{
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+    white-space: nowrap;
+    /*esse é para não quebrar quando passar do limite*/
+    overflow: hidden;
+    /*esse é para esconder quando o tamanho passar*/
+    text-overflow: ellipsis;
+     /*já esse é para adicionar "..." quando determinado tamanho ultrapassar*/
+}
+
+section #buscar{
+    margin-bottom: 15px;
+    
+}
+section div input{
+    border: 3px solid #2f2f2f;
+    padding: 5px;
+    border-radius: 3px;
+    background-color: #1c1c1c;
+    color:#e6e6e6;
+    margin-right: -10px;
+
+
+}
+section div button{
+    border: 3px solid #2f2f2f;
+    padding: 5px;
+    border-radius: 3px;
+    background-color: #000;
+    color: #e6e6e6;
+    cursor: pointer;
+
+}
+
+input::placeholder{
+    color: #e6e6e6;
+}

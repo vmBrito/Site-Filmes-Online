@@ -1,0 +1,111 @@
+img#imagem{
+    width: 200px;
+}
+img#imagem2{
+    width: 200px;
+}
+/* CSS É A FOLHA DE ESTILO E SUA UNICA FUNÇÃO É ESTILIZAR(MUDAR O TAMANHO, LARGURA)
+Anatomia do CSS----
+    seletor{
+        dentro das chavinhas fica as delimitações e dentro dele coloca a propriedade
+        voce coloca as caracteristicas o que voce quer mudar ou valor de atribuição
+        propriedade : valor da propriedade 
+    }
+
+    Existem varias formas de selecionar um elemento e seus tipos são:
+    seletor por nome do elemento ou tag ou ID
+*/
+h1{
+    background-color: aquamarine;
+    color:darkkhaki;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+    width: 100px;
+    height: 100px;
+    display: inline;
+}
+.lista2{
+    background-color: aqua;
+    color: rgb(165, 42, 134);
+}
+#lista{
+    color: brown;
+    background-color: beige;
+}
+
+/* a diferença da classse para o id é que o ID funciona como identificador unico já que
+a classe pode existir varias pessoas com o mesmo nome e não algo unico
+entao se voce quer aplicar apenas para um elemento voce aplica o ID 
+ID FUNCIONA COMO UM CPF DAQUELA PESSOA JÁ QUE NÃO PODE REPETIR
+A CLASSE POR EXEMPLO PODE REPETIR SE VOCE QUISER APLICAR ALGUMA COISA A ELEMENTOS
+DE UMA CLASSE ESPECIFICA BASTA COLOCAR O MESMO NOME NA CLASSE, E TODOS COM A CLASSE
+VAO RECEBER AS MUDANÇAS*/
+
+/*EXISTEM AS FONT-FAMILY E AS FONT-SIZE
+a font-family é para quando eu quero definir uma familia de fonte para o meu texto
+quero que seja arial ou verdana e para mudar o tamanho da nossa propriedade se usa o font-size
+*/
+
+/*e ai temos os nossos dimensionamentos que são width = largura e height = altura é bom observar
+que tudo no css é uma caixa personalizada ou seja, tudo são caixinhas dentro do nosso documento*/
+
+/*posicionamento:
+inline = sao elementos em linhas ou em textos que ocupam só o que eles precisam
+inbloco = são os elementos em bloco que geralmente ocupam o bloco inteiro da nossa pagina
+eles pegam 100% da nossa pagina e definimos altura e largura para eles
+
+exemplos de elementos inline são as tags de a,span eles sempre ficam um do lado do outro
+ele so ocupa o espaço que precisa, só o necessario, so a altura com o conteudo que ele tem dentro
+se colocar uma cor de fundo deles, eles nao pegam 100% da pagina, apenas o necessario para o conteudo
+
+ja os em blocos são os que ocupam 100 da pagina e eles são o p,h1,section...
+nos em blocos nos conseguimos setar a altura e a largura já nos inline não tem como
+se voce tentar setar altura ou largura nos elementos inline não vai funcionar
+pra inline nao consegue setar altura e largura
+
+mas no paragrafo funciona já que é um elemento em bloco
+mas nos conseguimos alterar esse comportamento, conseguimos setar um elemento em bloco para um inline
+e um elemnto inline para um elemento em bloco dependendo do qual voce escolher e quiser
+queo elemento vire bloco voce coloca
+display:block; lembrando que ao colocar algo do lado de um inline o outro fica ao lado no inblock
+o outro elemento vai par a parte de baixo
+*/
+a{
+    background-color: coral;
+    display: inline-block;
+    height: 200px;
+    width: 300px;
+}
+/*o inline block é um elemento inline mas com atributos em bloco. ganha os privilegios do em bloco
+então ele nao pega a tela toda mas conseguimos algumas modificações
+
+pra posicionar temos o flexbox que deixa as caixas flexiveis para voce mexer a vontade
+tem como selecionar uma dvi filha atraves de uma div pai.
+e para transformas as divs filhas em flexiveis precisamos setar a div pai como flexivel
+se voce definir as filhas o pai tambem tem que ser, a filha nao pode ser sem o pai
+o dysplay flex quebra em linha e deixa um do lado do outro
+mas voce consegue mudar pra quebrar em coluna que é o flex-direction column
+pra centralizar usamos o justify-content:center e tem varios outros como o de afastar o space-betwenn
+ */
+
+.divpai{
+    background-color: rgb(179, 195, 245);
+    width: 800px;
+    height: 800px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.divpai div{
+    width: 200px;
+    height: 200px;
+}
+.div1{
+    background-color: brown;
+}
+.div2{
+    background-color: rgb(216, 212, 4);
+}
+.div3{
+    background-color: rgb(42, 165, 97);
+}
